@@ -1,0 +1,19 @@
+# RSA cryptosystem
+
+RSA là một thuật toán mã hóa khóa công khai được phát triển bởi Ron Rivest, Adi Shamir và Leonard Adleman vào năm 1977. RSA sử dụng một cặp khóa, gồm một khóa công khai và một khóa bí mật khác nhau, để mã hóa và giải mã thông điệp.
+
+Thuật toán RSA dựa trên tính khó của việc phân tích một số nguyên thành các thừa số nguyên tố lớn. Thuật toán RSA thực hiện việc mã hóa thông điệp bằng cách sử dụng khóa công khai của người nhận, và chỉ người nhận có khóa bí mật tương ứng mới có thể giải mã thông điệp.
+
+Quá trình mã hóa RSA bắt đầu bằng cách chọn hai số nguyên tố lớn p và q. Số n được tính bằng tích của p và q, và được sử dụng để tạo ra khóa công khai và khóa bí mật. Khóa công khai bao gồm hai thành phần: một số n và một số e được chọn sao cho e là số nguyên tố cùng nhau với tổng số các thừa số nguyên tố của (p-1) và (q-1). Khóa bí mật bao gồm cũng bao gồm hai thành phần: số n và số d được tính bằng cách tìm số nguyên tố nghịch đảo của e theo modulo (p-1) và (q-1).
+
+Khi người gửi muốn mã hóa thông điệp để gửi cho người nhận, họ sử dụng khóa công khai của người nhận để mã hóa thông điệp. Người nhận sau đó sử dụng khóa bí mật của mình để giải mã thông điệp.
+
+RSA được sử dụng rộng rãi trong các ứng dụng bảo mật, như là một phương tiện để bảo vệ thông tin cá nhân và các dữ liệu quan trọng khác trên mạng. Nó cũng được sử dụng trong các hệ thống thanh toán điện tử và các giao thức bảo mật truyền thông.
+## 1. Sơ đồ mã hóa
+![alt text](https://lh3.googleusercontent.com/nxxgkqkcj9TFyAJbBY6VgLEZU_ZRwtm8dJPlq6nuMyHpqsk-aWbokbpsFmiemzHL4_Bs2dDIn1HRXx9R1teN_l3L6LKezOukSXomkQ6qntGVZld7VS3rZaxKpa7ObhMs-e5iGkV5JEX_ZHgOF4r4XeRxMxSni8BtfSxYV6cZtR8AyczLfgHJ5ynP2OEGWRd-4_Fl9znsBCiHMk06XqfMPjjnwbGbuY8J6sk9nqtljRhZYJMZf8hCRKop1tGOBaQoYjQlVg5dowSkaWg9v_cO4rBcQ0hHq258QLJEauF27ewuylpBXePFd4sKTt53PRMQVsj6yP-lNUZ8L2rnOwBUKX6TFkd8jcnDQdUtPofJ1rJUa_7-T-J330dpr-cp6nvfs9nzHgYOboyIH9KGQXFLLAOuDTq6MlXookZJh6KHkFSGTVXfMphXmQQWObFwhXCssxZ98_D_iLCQHINJ9oz7Uxbs7XVa-wK8OHwsGw0ytTBomfW0r9U6uw0Mmg6srZsmMZ8U2AQ9HhdYAsq0MDfgJfuoniXa-f6K01Z4U0nG4rY1BURj6rrvl44skBei74rtXpRkF7KO4RYvla_GNRcHJmAyd3xG5UXlrkouf5ZQAulNMPaeC2mjGasD4P0YQQTuUl5KyZkllYfaw6qNZ-f46tE-T_SrqkZnCGRHOsbdTj8GdUKU3rJ0CuXJ8zKZ9KixSUOj2q7V-jIWBxRpMB2vGugUlneGCtzmKyLhOIJyAXGgilOKnqgjWcYXhOF_kdywJDTJgLRg-_vbTfFjZCmpzbnO1cFWChm70OaEM4r3RKhcLjxnm1KYnDpKw3g7XhBdT1CYEaW04arWJRxgazx16qUft-jIwBEvF94NN8ia6_5fNvLi3tc2nOBCRSGjDzH8Ne7XzXxzWSsPWI8U-Yiy1-7aIqmSJexFP0FvC_d-jz-YS4E3KKD_N9RixiAAzUG4fLh15qSqNXIuigEHpQ=w651-h242-s-no?authuser=0)
+## 2. Độ bảo mật
+Hiện nay, mã hóa RSA vẫn được coi là một trong những thuật toán mã hóa khóa công khai phổ biến và mạnh nhất được sử dụng trong các ứng dụng bảo mật. Với cấp độ bảo mật hiện tại, tôi khuyên bạn nên sử dụng khóa độ dài tối thiểu là 2048 bit, có thể bảo vệ thông tin chống lại đa số các cuộc tấn công đáng kể.
+
+Máy tính lượng tử vẫn chưa có thể giải được mật mã RSA hiệu quả. Tuy nhiên, các nhà nghiên cứu đang phát triển các thuật toán giải mã khóa công khai mới dựa trên máy tính lượng tử, như [thuật toán Shor](https://vi.wikipedia.org/wiki/Thu%E1%BA%ADt_to%C3%A1n_Shor), có thể phá các hệ thống mã hóa khóa công khai hiện tại, bao gồm RSA, các máy tính lượng tử cần đủ mạnh để thực hiện các thuật toán này, và hiện nay vẫn chưa có máy tính lượng tử thực tế đủ mạnh để giải mã RSA với độ dài khóa lớn.
+
+Sử dụng khóa kích thước lớn có thể làm cho quá trình mã hóa và giải mã chậm hơn, nhưng đồng thời nó cũng làm cho nó khó khăn hơn đối với bất kỳ kẻ tấn công nào muốn phá vỡ hệ thống mã hóa của bạn. Những ứng dụng mật mã hiện nay đang dần chuyển sang sử dụng mã hóa đường cong Elliptic (ECC) thay vì RSA, bởi ECC cho phép sử dụng khóa có kích thước nhỏ hơn mà vẫn đảm bảo tính bảo mật cao, giúp tăng cường hiệu quả và tốc độ xử lý trong các hệ thống bảo mật.
