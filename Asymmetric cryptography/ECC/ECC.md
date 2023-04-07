@@ -1,3 +1,4 @@
+
 # Elliptic curve cryptography
 
 Mật mã đường cong elliptic (ECC) là họ hệ thống mật mã khóa công khai hiện đại, dựa trên cấu trúc đại số của đường cong elliptic trên trường hữu hạn và độ khó của bài toán logarit rời rạc trên đường cong elliptic (ECDLP).
@@ -31,7 +32,7 @@ P + P = R' = R(x,-y).
 Hình trên là mặt cắt ngang của đường cong elliptic, dưới đây là hình dạng đường cong trong không gian 3D
 
 <p align="center">
-  <img width="600" height="200" src="https://lh3.googleusercontent.com/sVnw-7Ws4HqH3-BpO_yqHEPCbq8lGyQBbTe29vOGeuzVH4oZ8J2ylU-E0xdzclZCjnbHrKRKuCp6ARydmpJxdUu4hnH2fWZ69lFwJ99d481X5erio6YMSef_UzXlC7mNh264EnUsfIvKbVqmfKOpg6HjvWqgiQuDtS7ELsA_dwQeL35xbsEI2oCudpLYghVmqi6zxuwB0sh_maVdreTBcnpazEBKkZdU_0p6FOPa5uy6MgGAjKdJHWbCZMZTYn-x56EPuzDve5ORudJTmiQinv8agMEGYU8OpN0Mtc5QanK8uiajd-kf7-VYveM9CDtP6LUR0xGu8m7A5LVwrbbKmzyAa_e8yWkn62y6gdO__IlEHenpuyssi4CZqJMuG67iUi4xeBxPlwYY0_M09BoM6QgcD628iz1bu76hnSGiITaUJXMH8OBuAx_eHANJK2HblcfYSg4S0b-niD9XTziKPgoeNXytoHDqDY_WV5FStbc4iQGSmLC-lD3GV0tuvyuRtQU7vea1oCPoCDqxpJyJIaJfzUSJzkV8Yfsv7byElcZZO5Z1-gwuRq1ibIFemLlaidqIAhBoRgU5mXLhznmxP_RrL2CIOz-_Z_BwtsHbMbAqRDcwmTGPe4JYEoRTOccbHbbUDFvTvG6TlCcEeRzLzLC5lq23IPl8OlvL7tw6C3K3VItadqEmYdtrhc6vFzXzVW5_Q7Pet3GyGyOQcR8vT1H1MxlJZr_5EOXjlDGnJNQYWpB6WwqxPDIWZdFmKhayMPaLMyfavyimtqnBI4jKfOuR2pN7JEMvZCZA0bW_0SMVUGUV0p5Ui336dx0vv64fvy42TkrtCrw2oW3APOV7BHx_B2RihJ_ouGREnMEsl-onNNfA6eJIC8R76Ah4uIs0YCOVunPzT3F9cf_knt_7uz6k0frS4tVBxbq6sQTJvEYHJwJEN7mr5ErMPWtNAIZicRku4U7oj8h8QoMLNA=w421-h220-no?authuser=0">
+  <img src="https://www.allaboutcircuits.com/uploads/articles/Curve_Cryptography_fig01.gif">
 </p>
 
 Phép nhân vô hướng được xác định bằng phép cộng lặp lại: 3P = P + P + P.
