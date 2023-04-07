@@ -12,6 +12,7 @@ Dựa trên toán học của các đường cong elliptic trên các trường 
 
 # 1. Nền tảng
 Hãy bắt đầu về ECC bằng cách tìm hiểu ý nghĩa của đường cong elliptic. Chúng ta sẽ nghiên cứu các phương trình Weierstrass, có dạng:
+
 $$
 Y^{2} = X^{3} + aX + b 
 $$
