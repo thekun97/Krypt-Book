@@ -7,7 +7,7 @@ Trước khi Diffie-Hellman ra đời, việc mã hóa thông tin thường đư
 ## 1. Sơ đồ hoạt động
 Bên A và bên B cần thiết lập một khóa bí mật chung để sử dụng trong việc mã hóa và giải mã tin nhắn. Để thực hiện điều này, họ thực hiện các bước sau:
 
-![alt text](https://lh3.googleusercontent.com/CgeU10cAdH-JGpLptJ3PAMb_iQX9_S4mgfdPndupsM6WsmlNdk1i8b_okJ2O-ExzIL6M1SIXRaojn0EWR66wGpjOPEsZogKSRpxxZuv-pIhwT0_P5_S4OB-gk0fpWUPaIW8TwQH-cA=w2400)
+![alt text](https://lh3.googleusercontent.com/o2HuOmjXGJlXZWL5HOBcETclaAA1DK_7ORQ1X1CO0KV6bzTx5HKIQNHPPumXEXO2bzYR8Rw7zjU4-9xXZGQ6kVmmcH7L8DyCEqCb2srnkL2yNMOKmDZdiKW0lHSfmotSyROFkL12Dw=w2400)
 
 1.  Alice và Bob thống nhất về một số nguyên tố lớn p và một điểm sinh g của p (cần chọn [số  nguyên tố an toàn](https://vi.wikipedia.org/wiki/S%E1%BB%91_nguy%C3%AAn_t%E1%BB%91_an_to%C3%A0n)).
     
