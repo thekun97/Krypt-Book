@@ -7,7 +7,7 @@ Trước khi Diffie-Hellman ra đời, việc mã hóa thông tin thường đư
 ## 1. Sơ đồ hoạt động
 Bên A và bên B cần thiết lập một khóa bí mật chung để sử dụng trong việc mã hóa và giải mã tin nhắn. Để thực hiện điều này, họ thực hiện các bước sau:
 
-![alt text](https://lh3.googleusercontent.com/J4giei4f_sPTetM01Jjc2bdtmmZqNmxH0bp-qL6f9ThSzPkknx6zEeasASXYI_ZhCy8NuJ7P_Vmynjtcwamh_bCmPOoWaX_m1E839PO46AAM3mw9-aSKoV4PG7kqC8rKhHAnXDBGvyJMekgPDk9GxW6xvYjVdHE6PCmlDjbxcrESvl6BJhqtaZqUONhuu13YE-aQ4gzfI3TmKIMLm-eqf-jSmoCmirT6-2RgeSvzqWABWT4kaXKNeauIdMpGqhKh0Cq0DLX2xtsrpY3qOrAFm5sndlMHnkedbrxL3fBHEnyB2vy9zD4YW7xSZmgZ4kMVpHlIgLue_UwKRX-IZXcCaabTwrdjSQ-KsWHo5LAIYFbsPp6aCPf_Z0dDP47FVoiPHofscikLFXdUmIkj44qQza1tJTGK5yh3yvX7eIUqeqjPAGYex65KYYUpgR4BYNdGwDLPLVUvQLhCah3SnFIwXk-bW7TXkVVgEKpGohjhBHYbG72Zjqp0XO8FkBUWLcvxeIRwVIlh5gEy4K8rGGmgeESMc8lAFwzdy9hqLo_ql-gFEFITS9JSWfA50aXndUKBMZR3LaWgRsHamrF-dO1_75eXWKnRz0g7LDZjBFHvBQ3ESH2MnT3sUtYISG99d7qEykAZyzejaYKTp5pVc3rj6GORp_QIn6fXFCLJtYlnDM9Wk4hHu3AiTAhG9BWFx15aazW4wCKsKWmX1THqG3mFP9Vi9eMpLju9NhkSriB-nxe44HB8ZVbQTyDQ58mtGClCbjxG4iRClU8AuQlINkTSCckDib3ZrulFrYrXblnTySEr0NEt2KYiC3DJQsNZaH3RhdMUfYHnfP3QB2aUwI8bNZGPKt3qSZcKgCgkiHILkf1Peb_ADcdxHkODiXmLh6olbmlhOsf5BZoDljBy7ESanb009v54eptI5vw-TcQ4qFWh30R3Ycdvd8f0zPjxpsZxRtRnKvBCqamdjzG90w=w771-h582-s-no?authuser=0)
+![alt text](https://lh3.googleusercontent.com/CgeU10cAdH-JGpLptJ3PAMb_iQX9_S4mgfdPndupsM6WsmlNdk1i8b_okJ2O-ExzIL6M1SIXRaojn0EWR66wGpjOPEsZogKSRpxxZuv-pIhwT0_P5_S4OB-gk0fpWUPaIW8TwQH-cA=w2400)
 
 1.  Alice và Bob thống nhất về một số nguyên tố lớn p và một điểm sinh g của p (cần chọn [số  nguyên tố an toàn](https://vi.wikipedia.org/wiki/S%E1%BB%91_nguy%C3%AAn_t%E1%BB%91_an_to%C3%A0n)).
     
