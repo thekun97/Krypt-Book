@@ -1,5 +1,9 @@
 # Handbook-of-Applied-Cryptography
 
+<p align="center">
+  <img src="https://github.com/thekun97/Krypt-Book/blob/main/_images/kryptbook-logo.png" width="500" title="hover text">
+</p>
+
 A collection of knowledge about cryptography, encryption, accompanied by real-world illustrative examples, and sample source code to help people gain a deeper understanding of how they work.
 
 ## Contents
