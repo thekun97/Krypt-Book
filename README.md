@@ -1,4 +1,4 @@
-# Handbook-of-Applied-Cryptography
+# Handbook of Applied Cryptography
 
 <p align="center">
   <img src="https://github.com/thekun97/Krypt-Book/blob/main/_images/kryptbook-logo.png" width="500" title="hover text">
