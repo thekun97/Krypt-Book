@@ -8,14 +8,19 @@ ZKP được ứng dụng trong nhiều lĩnh vực, bao gồm chứng thực da
 
 ![Zero-Knowledge Proof (ZKP) — Explained | Chainlink](https://blog.chain.link/wp-content/uploads/2021/07/zero-knowledge-proof-1024x772.png)
 
-## 1.  Thuật toán Zero-Knowledge Proof
-Trong ZKP, zk-SNARK (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge) và zk-STARK (Zero-Knowledge Scalable Transparent Argument of Knowledge) là hai thuật toán ZKP được sử dụng phổ biến nhất hiện nay.
+## Định nghĩa 
+Một bằng chứng không có kiến ​​thức của một số tuyên bố phải đáp ứng đủ ba tính chất:
 
-zk-SNARK đã được giới thiệu lần đầu tiên bởi Eli Ben-Sasson và các đồng nghiệp của ông tại Đại học Weizmann vào năm 2013. Thuật toán này đã được sử dụng rộng rãi trong các ứng dụng blockchain như Zcash và Ethereum. zk-SNARK cho phép chứng minh statement với kích thước nhỏ, không tốn quá nhiều tài nguyên tính toán và đảm bảo tính bảo mật cao.
+**Tính đầy đủ (Completeness)**: nếu tuyên bố là đúng, một người xác minh trung thực (nghĩa là một người tuân thủ đúng quy trình) sẽ bị thuyết phục về sự thật này bởi một người chứng minh trung thực.
 
-zk-STARK được giới thiệu vào năm 2018 bởi Eli Ben-Sasson và các đồng nghiệp tại Đại học Technion. Thuật toán này có khả năng bảo mật cao hơn so với zk-SNARK, đảm bảo tính phân quyền và không yêu cầu sự tin tưởng vào bên chứng minh. Tuy nhiên, zk-STARK có tốc độ chậm hơn so với zk-SNARK và đòi hỏi nhiều tài nguyên tính toán hơn.
+**Tính đúng đắn (Soundness)**: nếu tuyên bố đó là sai, không người chứng minh gian lận nào có thể thuyết phục người xác minh trung thực rằng điều đó là đúng.
 
-Cả zk-SNARK và zk-STARK đều có tính năng và ưu điểm riêng, và có thể được sử dụng trong nhiều ứng dụng khác nhau. Do đó, lựa chọn thuật toán phù hợp với ứng dụng cụ thể là rất quan trọng để đảm bảo tính bảo mật và hiệu suất của hệ thống.
+**Không có kiến thức (Zero-knowledge)**: nếu tuyên bố là đúng, không có người xác minh nào học được bất cứ điều gì khác ngoài thực tế là tuyên bố đó là đúng. Nói cách khác, chỉ cần biết tuyên bố (không phải bí mật) là đủ để tưởng tượng ra một tình huống chứng minh rằng người chứng minh biết bí mật.
 
-**zk-SNARK**
-Thuật toán zk-SNARK được sử dụng phổ biến trong các ứng dụng blockchain như Zcash và Ethereum. Các ứng dụng này sử dụng zk-SNARK để giữ cho giao dịch trên blockchain được bảo mật và riêng tư. Ví dụ, khi một người dùng thực hiện một giao dịch trên blockchain, zk-SNARK có thể được sử dụng để chứng minh rằng người dùng đó có đủ số dư để thực hiện giao dịch đó mà không cần tiết lộ số dư chính xác của người dùng.
+ZKP hiện nay thường có 2 dạng Bằng chứng tương tác (Interactive Proof) và bằng chứng không tương tác (Non-interactive Proof).
+
+**Bằng chứng tương tác (Interactive Proof):**
+Trong bằng chứng tương tác, quá trình chứng minh bao gồm sự tương tác trực tiếp giữa người chứng minh và người xác minh. Trong quá trình này, người chứng minh gửi các câu hỏi (challenges) đến người xác minh và nhận các câu trả lời (responses) từ người xác minh. Bằng cách lặp lại quá trình này, người xác minh có thể xác nhận tính đúng đắn của tuyên bố. Bằng chứng tương tác đòi hỏi tính truyền thông giữa người chứng minh và người xác minh và thông thường tốn nhiều thời gian.
+
+**Bằng chứng không tương tác (Non-interactive Proof):**
+Trái với bằng chứng tương tác, bằng chứng không tương tác cho phép chứng minh được thực hiện một cách độc lập mà không cần tương tác trực tiếp với người xác minh. Trong bằng chứng không tương tác, người chứng minh tạo ra một bằng chứng duy nhất và gửi nó đến người xác minh mà không cần thực hiện bất kỳ tương tác nào khác. Bằng chứng không tương tác thường dựa vào các phép tính mật mã không đổi thời gian như chữ ký số và bằng chứng Zero-Knowledge (ZK-PoK) để chứng minh tính đúng đắn mà không cần tương tác trực tiếp.
